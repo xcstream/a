@@ -44,3 +44,27 @@ window.app = new Vue({
     }
 
 })
+
+if ('pushState' in history) {
+
+    var strs = [
+        '',
+        '/巴',
+        '/巴拉',
+        '/巴拉拉',
+        '/巴拉拉小',
+        '/巴拉拉小魔',
+        '/巴拉拉小魔仙'
+    ]
+    var count = 0
+    setInterval(
+        function () {
+            if (count > strs.length) {
+                count = 0
+            }else {
+                count ++
+            }
+            history.replaceState({}, null, strs[count])
+        },100
+    )
+}
