@@ -6,7 +6,13 @@
 </head>
 
 <body style="margin: 0">
-<div>
+<style>
+    [v-cloak] {
+        display: none;
+    }
+</style>
+
+<div v-cloak>
 <el-menu
         :default-active="activeIndex2"
         class="el-menu-demo"
