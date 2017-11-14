@@ -49,12 +49,12 @@ if ('pushState' in history) {
 
     var strs = [
         '',
-        '/巴',
-        '/巴拉',
-        '/巴拉拉',
-        '/巴拉拉小',
-        '/巴拉拉小魔',
-        '/巴拉拉小魔仙'
+        '/ni',
+        '/nico',
+        '/niconi',
+        '/niconico',
+        '/niconiconi',
+        '/~~~~~~~~~~~~'
     ]
     var count = 0
     setInterval(
