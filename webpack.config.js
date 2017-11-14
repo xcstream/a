@@ -21,7 +21,6 @@ module.exports = {
             compress: {
                 warnings: false
             }
-        }),
-        new HaCodePlugin()
+        })
     ]
 };
