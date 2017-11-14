@@ -31,12 +31,14 @@
             回车键+1
         </el-button>
     </div>
-
-
     </div>
-
 </div>
-<script src="dist/index.bundle.js"></script>
+<script>
+    var  js = document.createElement("script")
+    js.src = "dist/index.bundle.js?" + Math.random()
+    document.body.appendChild(js)
+</script>
 
 </body>
+
 </html>
