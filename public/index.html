@@ -17,6 +17,24 @@
         active-text-color="#ffd04b">
     <el-menu-item index="1">菜单</el-menu-item>
 </el-menu>
+
+    <div style="margin: 4px">
+    <div v-for="item in arr" style="margin: 2px;">
+        {{item.text}}
+        <el-tag size="small" hit="true">{{fmt(item.time)}}</el-tag>
+    </div>
+    <div>
+        <el-input v-model="newText" @keyup.enter.native="btn1" style="width:70%">
+
+        </el-input>
+        <el-button @click="btn1" style="width:20%">
+            回车键+1
+        </el-button>
+    </div>
+
+
+    </div>
+
 </div>
 <script src="dist/index.bundle.js"></script>
 
